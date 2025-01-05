@@ -1,9 +1,9 @@
 package dev.alaugks.article.class_example;
 
 class ExampleDto {
-	@MappingTable(mapClass = StringValueMap.class)
+	@MapItems(mapClass = StringValueMap.class)
 	public String myStringFiled;
 
-	@MappingTable(mapClass = BooleanValueMap.class)
+	@MapItems(mapClass = BooleanValueMap.class)
 	private Boolean myBooleanField;
 }

@@ -10,14 +10,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class MappingTableStringValueTest {
+class MapItemsStringValueTest {
 
 	@Test
 	void testMapClass() throws NoSuchFieldException {
 		Field field = ExampleDto.class.getDeclaredField("myStringFiled");
 		field.setAccessible(true);
 
-		MappingTableStringValue annotation = field.getAnnotation(MappingTableStringValue.class);
+		MapItemsStringValue annotation = field.getAnnotation(MapItemsStringValue.class);
 
 		Map<String, String> map = Arrays.stream(annotation.items()).collect(
 				Collectors.toMap(

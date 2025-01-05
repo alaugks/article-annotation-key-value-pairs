@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class MappingTableTest {
+class MapItemsTest {
 
 	@Test
 	void testMapClass() throws NoSuchFieldException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 		Field field = ExampleDto.class.getDeclaredField("myStringFiled");
 		field.setAccessible(true);
 
-		MappingTable annotation = field.getAnnotation(MappingTable.class);
+		MapItems annotation = field.getAnnotation(MapItems.class);
 
 		assertEquals(
 				new StringValueMap().getMap(),

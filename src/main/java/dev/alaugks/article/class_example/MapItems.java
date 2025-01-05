@@ -1,4 +1,4 @@
-package dev.alaugks.article.enum_example;
+package dev.alaugks.article.class_example;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface MappingTable {
-	Maps map();
+public @interface MapItems {
+
+	Class<? extends MapInterface> mapClass();
 }

@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface MappingTableBooleanValue {
-	BooleanValueItem[] items();
+public @interface MapItemsStringValue {
+	StringValueItem[] items();
 }
